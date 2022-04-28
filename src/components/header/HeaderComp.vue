@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="row align-items-center justify-content-between">
         <LogoComp/>
         <HeaderNavComp/>
         <SelectComp/>
@@ -23,12 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// importo file mixin
-@import '../../assets/style/mixin.scss';
-
 div {
-    // prendo dal file mixin un set creato con variabili e lo completo con quellop che mi serve
-    @include d-flex( space-between, center);
     height: 80px;
 }
 

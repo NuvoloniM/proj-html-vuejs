@@ -5,7 +5,7 @@
 </template>
 
 <script>
-
+import 'bootstrap';
 import HeaderComp from './components/header/HeaderComp.vue';
 
 export default {
@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "bootstrap/dist/css/bootstrap.min.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
