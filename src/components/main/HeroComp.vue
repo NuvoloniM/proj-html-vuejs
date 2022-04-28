@@ -1,0 +1,75 @@
+<template>
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 left_hero">
+                    <h5> New Challenges, New Skills</h5>
+                    <h3>Build your own life coaching business</h3>
+                    <p>Whole-life Business Coaching for committed entrepreneurs</p>
+                    <button class="btn">
+                        <a href="#">Get started today</a>
+                    </button>
+                </div>
+                <div class="col-8 right_hero">
+                    <img class="img-fluid" src="../../assets/images/home-business-hero-avatar.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'HeroComp',
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../../assets/style/mixin.scss";
+    .hero{
+        height: calc((80vh - 80px));
+        background-color: $hero_bg;
+
+        .left_hero{
+            @include d-flex(center, start);
+            flex-direction: column;
+            text-align: start;
+            padding: 30px 50px 30px 0;
+
+            h5{
+                color: $main_text;
+            }
+
+            h3 {
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 0.8em;
+                color: $nav_text;
+            }
+
+            .btn {
+                background-color: $main_text;
+                padding: 10px 15px;
+
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .right_hero {
+            @include d-flex(center,center);
+            background-image: url('../../assets/images/home-business-hero-global-image.png');
+            background-position: center;
+            background-repeat: no-repeat ;
+            background-size: contain;
+            img {
+                height: calc((80vh - 80px));
+                padding-top: 20px;
+            }
+        }
+    }
+</style>
