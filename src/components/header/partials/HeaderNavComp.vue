@@ -1,7 +1,7 @@
 <template>
     <div>
-        <ul v-for="(element,index) in navbarMenu" :key="index">
-            <li> 
+        <ul>
+            <li v-for="(element,index) in navbarMenu" :key="index"> 
                 <a :href="`${element.url}`">{{element.name}}</a>
             </li>
         </ul>
@@ -45,5 +45,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../assets/style/mixin.scss';
+
+ul {
+    @include orizontalMenu;
+}
+
 
 </style>

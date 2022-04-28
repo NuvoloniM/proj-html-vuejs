@@ -3,7 +3,6 @@
         <LogoComp/>
         <HeaderNavComp/>
         <SelectComp/>
-        <SearchComp/>
     </div>
 </template>
 
@@ -12,7 +11,6 @@
 import LogoComp from '../header/partials/LogoComp.vue';
 import HeaderNavComp from '../header/partials/HeaderNavComp.vue';
 import SelectComp from '../header/partials/SelectComp.vue';
-import SearchComp from '../header/partials/SearchComp.vue';
 
 export default {
     name: 'HeaderComp',
@@ -20,11 +18,18 @@ export default {
         LogoComp,
         HeaderNavComp,
         SelectComp,
-        SearchComp,
     }
 }
 </script>
 
 <style lang="scss" scoped>
+// importo file mixin
+@import '../../assets/style/mixin.scss';
+
+div {
+    // prendo dal file mixin un set creato con variabili e lo completo con quellop che mi serve
+    @include d-flex( space-between, center);
+    height: 80px;
+}
 
 </style>

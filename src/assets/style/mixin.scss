@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+@mixin orizontalMenu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin d-flex ( $just, $align ){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $just;
+    align-items: $align;
+}
