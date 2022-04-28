@@ -1,13 +1,17 @@
 <template>
   <div id="app">
+    <HeaderComp/>
   </div>
 </template>
 
 <script>
 
+import HeaderComp from './components/header/HeaderComp.vue';
+
 export default {
   name: 'App',
   components: {
+    HeaderComp,
   }
 }
 </script>
