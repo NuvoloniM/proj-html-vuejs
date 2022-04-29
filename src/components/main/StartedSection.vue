@@ -1,7 +1,7 @@
 <template>
     <div class="container text-center py-5 my-4 w-75 mx-auto">
-        <h6>Let's Dream Big Together</h6>
-        <h4 class="p-5 m-auto">We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization. </h4>
+        <h6 class="pt-5">Let's Dream Big Together</h6>
+        <h4 class="p-3 m-auto">We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization. </h4>
         <div class="row align-items-start py-2">
             <!-- passo i props al figlio e lo ciclo per la lunghezza dell'array -->
                 <StartedSectionCard

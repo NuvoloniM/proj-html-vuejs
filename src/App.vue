@@ -4,15 +4,22 @@
     <main>
       <HeroComp/>
       <StartedSection/>
+      <ExploreSection/>
     </main>
   </div>
 </template>
 
 <script>
 import 'bootstrap';
+
+// * Header components *
 import HeaderComp from './components/header/HeaderComp.vue';
+// * Main components *
 import HeroComp from './components/main/HeroComp.vue';
 import StartedSection from './components/main/StartedSection.vue';
+import ExploreSection from './components/main/ExploreSection.vue'
+// * Footer components *
+
 
 export default {
   name: 'App',
@@ -20,6 +27,7 @@ export default {
     HeaderComp,
     HeroComp,
     StartedSection,
+    ExploreSection,
   }
 }
 </script>
