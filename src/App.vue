@@ -5,6 +5,7 @@
       <HeroComp/>
       <StartedSection/>
       <ExploreSection/>
+      <HelpSection/>
     </main>
   </div>
 </template>
@@ -18,6 +19,7 @@ import HeaderComp from './components/header/HeaderComp.vue';
 import HeroComp from './components/main/HeroComp.vue';
 import StartedSection from './components/main/StartedSection.vue';
 import ExploreSection from './components/main/ExploreSection.vue'
+import HelpSection from './components/main/HelpSection.vue'
 // * Footer components *
 
 
@@ -28,6 +30,7 @@ export default {
     HeroComp,
     StartedSection,
     ExploreSection,
+    HelpSection,
   }
 }
 </script>
