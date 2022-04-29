@@ -6,6 +6,7 @@
       <StartedSection/>
       <ExploreSection/>
       <HelpSection/>
+      <PubblicitySection/>
     </main>
   </div>
 </template>
@@ -20,6 +21,7 @@ import HeroComp from './components/main/HeroComp.vue';
 import StartedSection from './components/main/StartedSection.vue';
 import ExploreSection from './components/main/ExploreSection.vue'
 import HelpSection from './components/main/HelpSection.vue'
+import PubblicitySection from './components/main/PubblicitySection.vue';
 // * Footer components *
 
 
@@ -31,6 +33,7 @@ export default {
     StartedSection,
     ExploreSection,
     HelpSection,
+    PubblicitySection,
   }
 }
 </script>

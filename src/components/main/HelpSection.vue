@@ -13,7 +13,7 @@
                 :link="element.link"
                 />
         </div>
-        <p> Take the control of their life back and start doing things to make their dream come true. <span><a href="#">View all courses <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></a></span></p>
+        <p class="w-50 mx-auto py-5"> Take the control of their life back and start doing things to make their dream come true. <span class="link"><a href="#">View all courses <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></a></span></p>
     </div>
 </div>
     
@@ -69,4 +69,13 @@ export default {
 h6 {
     color: $main_text;
 }
+
+.link {
+    a{
+        color: $nav_text;
+        text-decoration: none;
+        border-bottom: 1px solid $section_bg;
+    }
+}
+
 </style>

@@ -35,11 +35,7 @@ export default {
         padding: 0;
 
         .filter {
-            background-color: #000;
-            height: 100%;
-            width: 100%;
-            filter: opacity(20%);
-            border-radius: 5px;
+            @include black_filter;
         }
 
         .photo_text {
