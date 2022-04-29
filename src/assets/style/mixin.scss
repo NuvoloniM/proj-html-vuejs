@@ -13,3 +13,16 @@
     justify-content: $just;
     align-items: $align;
 }
+
+@mixin btn ($bg-color , $tx-color , $border-color){
+        background-color: $bg-color;
+        padding: 10px 15px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+
+        a{
+            color: $tx-color;
+            text-decoration: none;
+            font-weight: bold;
+        }
+}

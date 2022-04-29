@@ -3,6 +3,7 @@
     <HeaderComp/>
     <main>
       <HeroComp/>
+      <StartedSection/>
     </main>
   </div>
 </template>
@@ -11,12 +12,14 @@
 import 'bootstrap';
 import HeaderComp from './components/header/HeaderComp.vue';
 import HeroComp from './components/main/HeroComp.vue';
+import StartedSection from './components/main/StartedSection.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
     HeroComp,
+    StartedSection,
   }
 }
 </script>

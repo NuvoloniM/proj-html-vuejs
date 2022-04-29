@@ -50,13 +50,7 @@ export default {
             }
 
             .btn {
-                background-color: $main_text;
-                padding: 10px 15px;
-
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                }
+                @include btn($main_text , #fff , $main_text)
             }
         }
 
