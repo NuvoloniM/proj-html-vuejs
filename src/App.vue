@@ -3,6 +3,11 @@
     <HeaderNav/>
     <main>
       <HeroComp/>
+      <div class="return_home text-end px-2">
+      <a href="#">
+        <font-awesome-icon icon="fa-solid fa-circle-up" />
+      </a>
+    </div>
       <StartedSection/>
       <ExploreSection/>
       <HelpSection/>
@@ -55,9 +60,24 @@ export default {
 <style lang="scss">
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import './assets/style/variables.scss';
+
 
 #app {
   font-family: 'Roboto', sans-serif;
+
+  .return_home {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    z-index: 4;
+
+    a {
+      text-decoration: none;
+      color: $main-text;
+      font-size: 3em;
+    }
+  }
 }
 
 footer {

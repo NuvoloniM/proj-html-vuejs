@@ -7,14 +7,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
 import { faCircleUser, faFileLines, faUser, faCirclePlay } from '@fortawesome/free-regular-svg-icons'
-import { faMagnifyingGlass, faChevronDown, faArrowRightLong, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faChevronDown, faArrowRightLong, faLocationDot, faCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faCircleUser, faFileLines, faUser, faMagnifyingGlass, faChevronDown, faArrowRightLong, faCirclePlay, faLocationDot,faFacebook, faTwitter, faInstagram, faLinkedin )
+library.add(faCircleUser, faFileLines, faUser, faMagnifyingGlass, faChevronDown, faArrowRightLong, faCirclePlay, faLocationDot,faFacebook, faTwitter, faInstagram, faLinkedin, faCircleUp )
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
