@@ -7,6 +7,8 @@
       <ExploreSection/>
       <HelpSection/>
       <PubblicitySection/>
+      <EventSection/>
+      <CommentSection/>
     </main>
   </div>
 </template>
@@ -22,6 +24,8 @@ import StartedSection from './components/main/StartedSection.vue';
 import ExploreSection from './components/main/ExploreSection.vue'
 import HelpSection from './components/main/HelpSection.vue'
 import PubblicitySection from './components/main/PubblicitySection.vue';
+import EventSection from './components/main/EventSection.vue';
+import CommentSection from './components/main/CommentSection.vue';
 // * Footer components *
 
 
@@ -34,6 +38,8 @@ export default {
     ExploreSection,
     HelpSection,
     PubblicitySection,
+    EventSection,
+    CommentSection,
   }
 }
 </script>
