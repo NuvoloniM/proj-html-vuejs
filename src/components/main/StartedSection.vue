@@ -36,32 +36,32 @@ export default {
         return {
             features: [
                 {
-                    media: require ('../../assets/images/en.png'),
+                    media: require ('../../assets/images/icons8-halloween-cyclop-monster-64.png'),
                     title: 'One to One',
                     description: 'Getting the necessary clarity about the current state to help you improve your game',
                 },
                 {
-                    media: require ('../../assets/images/en.png'),
+                    media: require ('../../assets/images/icons8-anywhere-64.png'),
                     title: 'Anywhere',
                     description: 'Getting the necessary clarity about the current state to help you improve your game',
                 },
                 {
-                    media: require ('../../assets/images/en.png'),
+                    media: require ('../../assets/images/icons8-orologio-50.png'),
                     title: 'On time',
                     description: 'Getting the necessary clarity about the current state to help you improve your game',
                 },
                 {
-                    media: require ('../../assets/images/en.png'),
+                    media: require ('../../assets/images/icons8-web-marketing-64.png'),
                     title: 'Online Courses',
                     description: 'Getting the necessary clarity about the current state to help you improve your game',
                 },
                 {
-                    media: require ('../../assets/images/en.png'),
+                    media: require ('../../assets/images/icons8-consulting-64.png'),
                     title: 'Consulting',
                     description: 'Getting the necessary clarity about the current state to help you improve your game',
                 },
                 {
-                    media: require ('../../assets/images/en.png'),
+                    media: require ('../../assets/images/icons8-ingranaggio-100.png'),
                     title: 'Self Development',
                     description: 'Getting the necessary clarity about the current state to help you improve your game',
                 },

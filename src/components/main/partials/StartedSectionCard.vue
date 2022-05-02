@@ -28,4 +28,8 @@ p {
     color: $comment_text;
     font-size: 0.8em;
 }
+
+img {
+    height: 50%;
+}
 </style>
