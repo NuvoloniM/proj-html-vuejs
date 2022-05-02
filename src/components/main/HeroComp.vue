@@ -15,12 +15,19 @@
                 </div>
             </div>
         </div>
+        <HeroIconMenu/>
     </div>
 </template>
 
 <script>
+
+import HeroIconMenu from '../main/partials/HeroIconMenu.vue';
+
 export default {
     name: 'HeroComp',
+    components: {
+        HeroIconMenu,
+    }
 }
 </script>
 
@@ -29,6 +36,7 @@ export default {
     .hero{
         height: calc((80vh - 80px));
         background-color: $hero_bg;
+        position: relative;
 
         .left_hero{
             @include d-flex(center, start);
