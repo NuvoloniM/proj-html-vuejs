@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComp/>
+    <HeaderNav/>
     <main>
       <HeroComp/>
       <StartedSection/>
@@ -21,7 +21,7 @@
 import 'bootstrap';
 
 // * Header components *
-import HeaderComp from './components/header/HeaderComp.vue';
+import HeaderNav from './components/header/HeaderNav.vue';
 // * Main components *
 import HeroComp from './components/main/HeroComp.vue';
 import StartedSection from './components/main/StartedSection.vue';
@@ -38,7 +38,7 @@ import FooterSection from './components/footer/FooterSection.vue';
 export default {
   name: 'App',
   components: {
-    HeaderComp,
+    HeaderNav,
     HeroComp,
     StartedSection,
     ExploreSection,
