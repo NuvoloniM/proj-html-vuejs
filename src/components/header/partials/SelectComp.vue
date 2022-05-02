@@ -10,7 +10,7 @@
         <option v-for="(element,index) in language" :key="index" :value="`${index}`">  {{element.lang}} </option>
     </select>
     <!-- importo icona da fnt awesome dopo averlo installato tramite npm e aver creato libreria in main.js -->
-    <span class="px-2 fs-3">
+    <span class="px-2 fs-3 user_icon">
         <font-awesome-icon icon="fa-regular fa-circle-user" />
     </span>
     <SearchComp/>
@@ -54,6 +54,10 @@ export default {
 
 select {
     border: none;
+}
+
+.user_icon{
+    border-left: 1px solid #eceeef;
 }
 
 </style>
