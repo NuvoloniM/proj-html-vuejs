@@ -12,12 +12,13 @@ import { faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong} from "@fortawesome/free-solid-svg-icons";
 import {faCirclePlay} from "@fortawesome/free-regular-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faCircleUser, faMagnifyingGlass, faChevronDown, faArrowRightLong, faCirclePlay, faLocationDot, )
+library.add(faCircleUser, faMagnifyingGlass, faChevronDown, faArrowRightLong, faCirclePlay, faLocationDot,faFacebook, faTwitter, faInstagram, faLinkedin )
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

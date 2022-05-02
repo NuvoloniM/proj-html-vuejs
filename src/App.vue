@@ -11,6 +11,9 @@
       <CommentSection/>
       <SubscribeSection/>
     </main>
+    <footer>
+      <FooterSection/>
+    </footer>
   </div>
 </template>
 
@@ -29,6 +32,7 @@ import EventSection from './components/main/EventSection.vue';
 import CommentSection from './components/main/CommentSection.vue';
 import SubscribeSection from './components/main/SubscribeSection.vue';
 // * Footer components *
+import FooterSection from './components/footer/FooterSection.vue';
 
 
 export default {
@@ -43,6 +47,7 @@ export default {
     EventSection,
     CommentSection,
     SubscribeSection,
+    FooterSection,
   }
 }
 </script>
@@ -53,5 +58,9 @@ export default {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+footer {
+  background-color: #000;
 }
 </style>
