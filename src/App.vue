@@ -9,6 +9,7 @@
       <PubblicitySection/>
       <EventSection/>
       <CommentSection/>
+      <SubscribeSection/>
     </main>
   </div>
 </template>
@@ -26,6 +27,7 @@ import HelpSection from './components/main/HelpSection.vue'
 import PubblicitySection from './components/main/PubblicitySection.vue';
 import EventSection from './components/main/EventSection.vue';
 import CommentSection from './components/main/CommentSection.vue';
+import SubscribeSection from './components/main/SubscribeSection.vue';
 // * Footer components *
 
 
@@ -40,6 +42,7 @@ export default {
     PubblicitySection,
     EventSection,
     CommentSection,
+    SubscribeSection,
   }
 }
 </script>

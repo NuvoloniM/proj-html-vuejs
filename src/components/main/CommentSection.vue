@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="container text-center py-5 my-4 w-75 mx-auto">
+    <div class="container text-center py-5 my-4 ">
         <h6 class="pt-5">People are praising Maxcoach</h6>
         <h4 class="p-3 m-auto">What make they love us?</h4>
         <div class="row align-items-start py-2">
