@@ -1,9 +1,9 @@
 <template>
-    <div class="d-flex text-white align-items-star my-3">
+    <div class="d-flex text-white align-items-star my-3 effect">
         <div class="col-1">
-            <font-awesome-icon icon="fa-regular fa-circle-play" class="icon" />
+            <font-awesome-icon icon="fa-regular fa-circle-play" class="icon_down" />
         </div>
-        <div class="col-11 mb-3 effect">
+        <div class="col-11 mb-3">
             <h4> {{title}}</h4>
             <p>
                 {{text1}}
@@ -28,10 +28,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../assets/style/variables.scss';
-    .icon {
+    .icon_down {
         transform: rotate(90deg);
         font-size: 1.2em;
-        transition: transform 2s;
+        transition: transform 1s;
     }
 
     h4 {
@@ -46,17 +46,20 @@ export default {
 
     }
 
-    .effect:hover p {
-        display: block;
-        cursor: pointer;
+    .effect:hover {
+
+        p{
+            display: block;
+            cursor: pointer;
+        }
+
+        h4 {
+            color: $main_text;
+        }
+
+        .icon_down{
+            transform: rotate(-90deg);
+        }
     }
 
-    .effect:hover h4{
-        color: $main_text;
-    }
-
-    .effect:hover .col-1 .icon{
-        transform: rotate(-180deg);
-        color: $main_text;
-    }
 </style>

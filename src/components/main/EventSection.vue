@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="container text-center py-5 my-4 w-75 mx-auto">
+    <div class="container text-center py-5 mt-4 mb-2 w-75 mx-auto">
         <h6 class="pt-5">Wanna transform your life?</h6>
         <h4 class="p-3 m-auto">Upcoming Events</h4>
         <div class="row align-items-start py-2">
@@ -10,10 +10,10 @@
             :event='element'
             />
         </div>
-            <p class="w-50 mx-auto py-5"> Excited about our event? <span class="link"><a href="#">View all events <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></a></span></p>        
+            <p class="w-50 mx-auto py-3"> Excited about our event? <span class="link"><a href="#">View all events <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></a></span></p>        
     </div>
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.22,150.48 C149.83,137.65 428.04,123.83 508.74,-4.43 L500.00,150.00 L159.42,186.02 Z" style="stroke: none; fill: #eceeef;"></path></svg></div>
 </div>
-    
 </template>
 
 <script>
