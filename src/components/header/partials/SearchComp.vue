@@ -1,12 +1,10 @@
 <template>
-    <div class="d-flex justify-content-between align-items-center p-0">
-        <input type="text" placeholder="Search...">
-        <span>
-            <button class="btn btn-light">
-                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-            </button>
-        </span>
-    </div>
+<form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+    <button class="btn btn-light" type="submit">
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+    </button>
+</form>
 </template>
 
 <script>

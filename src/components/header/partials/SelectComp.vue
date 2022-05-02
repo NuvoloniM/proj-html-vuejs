@@ -5,12 +5,12 @@
         <img :src="`${this.language[this.selected].flag}`" alt=""> 
     </span>
      <!-- inserisco il v-model per ottenere in data il valore selezionato (lo preimposto in 0 per non farlo risultare undefined) -->
-    <select class="form-select mx-2" aria-label="Default select example" v-model="selected">
+    <select class="form-select mx-2 text-uppercase w-50" aria-label="Default select example" v-model="selected">
         <!-- ciclo l'array di oggetti per ottenere indice e nome da inserire nel value e nella select -->
         <option v-for="(element,index) in language" :key="index" :value="`${index}`">  {{element.lang}} </option>
     </select>
     <!-- importo icona da fnt awesome dopo averlo installato tramite npm e aver creato libreria in main.js -->
-    <span>
+    <span class="px-2 fs-3">
         <font-awesome-icon icon="fa-regular fa-circle-user" />
     </span>
     <SearchComp/>
@@ -52,5 +52,8 @@ export default {
 <style lang="scss" scoped>
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+select {
+    border: none;
+}
 
 </style>
