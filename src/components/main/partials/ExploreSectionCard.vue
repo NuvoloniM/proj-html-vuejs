@@ -1,6 +1,6 @@
 <template>
-    <div class="col-4 d-flex pb-4">
-        <div class="card">
+    <div class="col-4 d-flex pb-4" >
+        <div class="card" v-if="type == this.typeView">
             <img :src="`${media}`" class="card-img-top" alt="...">
             <div class="card-body p-0">
                 <h5 class="card-title pt-4"> {{title}} </h5>
@@ -16,11 +16,35 @@
 <script>
 export default {
     name: 'ExploreSectionCard',
+    data() {
+        return {
+            typeView: 'A'
+        }
+    },
     props: {
         media: String,
         title: String,
         description: String,
         link: String,
+        type: String,
+    },
+    created() {
+        this.autorun();
+    },
+    methods: {
+        changeCard: function() {
+            if (this.typeView == 'A') {
+                this.typeView = 'B';
+            } else if (this.typeView == 'B'){
+                this.typeView = 'C';
+            } else {
+                this.typeView = 'A'
+            }
+            this.$emit('typeView', this.typeView)
+        },
+        autorun: function() {
+                setInterval(this.changeCard,3000);
+            }
     }
 }
 </script>

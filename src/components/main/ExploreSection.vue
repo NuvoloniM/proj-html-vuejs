@@ -12,12 +12,14 @@
                 :title="element.title"
                 :description="element.description"
                 :link="element.link"
+                :type='element.type'
+                @typeView = "getActiveIndex"
             />
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot" :class="(this.currentIndex == 'A') ? 'active' : ''"></div>
+            <div class="dot" :class="(this.currentIndex == 'B') ? 'active' : ''"></div>
+            <div class="dot" :class="(this.currentIndex == 'C') ? 'active' : ''"></div>
         </div>
     </div>
 </div>
@@ -35,26 +37,78 @@ export default {
     },
     data() {
         return {
+            currentIndex: '',
             services: [
                 {
                     media: require('../../assets/images/home-business-service-slide-01-480x298.jpg'),
                     title: 'Consultative Training',
                     description: 'With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.',
                     link: '#',
+                    type: 'A',
                 },
                 {
                     media: require('../../assets/images/home-business-service-slide-02-480x298.jpg'),
                     title: 'Real Deal Coaching',
                     description: 'Brings an exceptionally powerful opportunity. Being able to accept, to worl with that opportunity',
                     link: '#',
+                    type: 'A',
                 },
                 {
                     media: require('../../assets/images/home-business-service-slide-03-480x298.jpg'),
                     title: 'Advisor Training Program',
                     description: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed',
                     link: '#',
+                    type: 'A',
                 },
+                {
+                    media: require('../../assets/images/home-business-service-slide-02-480x298.jpg'),
+                    title: 'Real Deal Coaching',
+                    description: 'Brings an exceptionally powerful opportunity. Being able to accept, to worl with that opportunity',
+                    link: '#',
+                    type: 'B',
+                },
+                {
+                    media: require('../../assets/images/home-business-service-slide-03-480x298.jpg'),
+                    title: 'Advisor Training Program',
+                    description: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed',
+                    link: '#',
+                    type: 'B',
+                },
+                {
+                    media: require('../../assets/images/home-business-service-slide-01-480x298.jpg'),
+                    title: 'Consultative Training',
+                    description: 'With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.',
+                    link: '#',
+                    type: 'B',
+                },
+                {
+                    media: require('../../assets/images/home-business-service-slide-03-480x298.jpg'),
+                    title: 'Advisor Training Program',
+                    description: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed',
+                    link: '#',
+                    type: 'C',
+                },
+                {
+                    media: require('../../assets/images/home-business-service-slide-01-480x298.jpg'),
+                    title: 'Consultative Training',
+                    description: 'With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.',
+                    link: '#',
+                    type: 'C',
+                },
+                {
+                    media: require('../../assets/images/home-business-service-slide-02-480x298.jpg'),
+                    title: 'Real Deal Coaching',
+                    description: 'Brings an exceptionally powerful opportunity. Being able to accept, to worl with that opportunity',
+                    link: '#',
+                    type: 'C',
+                },
+                
             ]
+        }
+    },
+    methods: {
+        getActiveIndex: function(testo) {
+            this.currentIndex = testo;
         }
     }
 }
