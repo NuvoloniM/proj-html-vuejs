@@ -7,7 +7,7 @@
      <!-- inserisco il v-model per ottenere in data il valore selezionato (lo preimposto in 0 per non farlo risultare undefined) -->
     <select class="form-select mx-2 text-uppercase w-50" aria-label="Default select example" v-model="selected">
         <!-- ciclo l'array di oggetti per ottenere indice e nome da inserire nel value e nella select -->
-        <option v-for="(element,index) in language" :key="index" :value="`${index}`">  {{element.lang}} </option>
+        <option v-for="(element,index) in language" :key="index" :value="`${index}`"> {{element.lang}} </option>
     </select>
     <!-- importo icona da fnt awesome dopo averlo installato tramite npm e aver creato libreria in main.js -->
     <span class="px-2 fs-3 user_icon">
@@ -31,15 +31,15 @@ export default {
         return{
             language: [
                 {
-                    lang: 'english',
+                    lang: 'English',
                     flag: require('../../../assets/images/en.png')
                 },
                 {
-                    lang: 'deutch',
+                    lang: 'Deutch',
                     flag: require('../../../assets/images/de.png')
                 },
                 {
-                    lang: 'french',
+                    lang: 'French',
                     flag: require('../../../assets/images/fr.png')
                 },
             ],
