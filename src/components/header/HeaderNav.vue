@@ -13,10 +13,7 @@
                 {{element.name}}
             </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li v-for="(subelement,index) in element.sublink " :key="index"><a class="dropdown-item" :href="`${subelement.url}`"> {{subelement.name}} </a></li>
                 </ul>
             </li>
         </ul>
@@ -40,26 +37,87 @@ export default {
                 {
                     name: 'Home',
                     url: '#',
+                    sublink: [
+                        {
+                            name:'Action',
+                            url: '#',
+                        },
+                        {
+                            name:'Another action',
+                            url: '#',
+                        },
+                        {
+                            name:'Something else here',
+                            url: '#',
+                        },
+                    ]
                 },
                 {
                     name: 'Pages',
                     url: '#',
+                    sublink: [
+                        {
+                            name:'Action',
+                            url: '#',
+                        },
+                    ]
                 },
                 {
                     name: 'Courses',
                     url: '#',
+                    sublink: [
+                        {
+                            name:'Action',
+                            url: '#',
+                        },
+                        {
+                            name:'Another action',
+                            url: '#',
+                        },
+                    ]
                 },
                 {
                     name: 'Features',
                     url: '#',
+                    sublink: [
+                        {
+                            name:'Action',
+                            url: '#',
+                        },
+                        {
+                            name:'Another action',
+                            url: '#',
+                        },
+                    ]
                 },
                 {
                     name: 'Blog',
                     url: '#',
+                    sublink: [
+                        {
+                            name:'Action',
+                            url: '#',
+                        },
+                        {
+                            name:'Another action',
+                            url: '#',
+                        },
+                        {
+                            name:'Something else here',
+                            url: '#',
+                        },
+                    ]
                 },
                 {
                     name: 'Shop',
                     url: '#',
+                    sublink: [
+                        {
+                            name:'Action',
+                            url: '#',
+                        },
+                        
+                    ]
                 },
             ]
         }
