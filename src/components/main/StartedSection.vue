@@ -82,10 +82,22 @@ export default {
     }
 
     .btn_light {
-        @include btn (#fff, $main_text, $section_bg) 
+        @include btn (#fff, $main_text, $section_bg);
+        
+        &:hover {
+            background-color: $nav_text;
+            border: 1px solid $nav_text;
+            a {
+                color: #fff;
+            }
+        }
     }
 
     .btn_prymary {
-        @include btn( $main_text , #fff , $main_text)
+        @include btn( $main_text , #fff , $main_text);
+        &:hover {
+            background-color: $nav_text;
+            border: 1px solid $nav_text;
+        }
     }
 </style>

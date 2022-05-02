@@ -68,6 +68,10 @@ button {
     background-color: $main_text;
     color: #fff;
     font-size: 0.8em;
+
+    &:hover {
+        background-color: $nav_text;
+    }
 }
 
 </style>

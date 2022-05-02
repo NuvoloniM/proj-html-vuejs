@@ -12,8 +12,8 @@
             </div>
             <div class="col-4">
                 <div class="day"> {{event.day}} </div>
-                <div class="text-uppercase"> {{event.month}} </div>
-                <div class="d-inline-block btn btn_prymary">
+                <div class="text-uppercase py-2"> {{event.month}} </div>
+                <div class="d-inline-block btn btn_primary">
                     <a :href="`${event.link}`"> Get Ticket </a>
                 </div>
             </div>
@@ -37,6 +37,19 @@ export default {
 .event_card {
     background-color: #eceeef;
     padding: 20px;
+
+    &:hover {
+        background-color: #fff;
+        border-left: 3px solid $main_text;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 5px 5px 20px #bcbcbe;
+
+        .btn_primary{
+            background-color: $nav_text;
+            border: 1px solid $nav_text;
+        }
+    }
 }
 
 .where {
@@ -50,7 +63,7 @@ export default {
     color: $main_text;
 }
 
-.btn_prymary {
+.btn_primary {
         @include btn( $main_text , #fff , $main_text)
     }
 

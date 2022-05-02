@@ -46,11 +46,16 @@ export default {
 
             p {
                 font-size: 0.8em;
-                color: $nav_text;
+                color: $comment_text;
             }
 
             .btn {
-                @include btn($main_text , #fff , $main_text)
+                @include btn($main_text , #fff , $main_text);
+
+                &:hover {
+                    background-color: $nav_text;
+                    border: 1px solid $nav_text;
+                }
             }
         }
 

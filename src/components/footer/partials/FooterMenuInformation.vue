@@ -49,6 +49,10 @@ a {
     text-decoration: none;
     color: $comment_text;
     font-size: 0.8em;
+
+    &:hover {
+        color: #fff;
+    }
 }
 
 </style>

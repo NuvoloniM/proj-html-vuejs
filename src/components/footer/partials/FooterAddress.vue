@@ -67,6 +67,10 @@ ul {
             text-decoration: none;
             font-size: 1.3em;
             color: $comment_text;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }

@@ -11,6 +11,9 @@
                 :title="element.title"
                 :price="element.price"
                 :link="element.link"
+                :description="element.description"
+                :lessons="element.lessons"
+                :students="element.students"
                 />
         </div>
         <p class="w-50 mx-auto py-5"> Take the control of their life back and start doing things to make their dream come true. <span class="link"><a href="#">View all courses <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></a></span></p>
@@ -35,25 +38,37 @@ export default {
                     media: require('../../assets/images/course-02-443x600.jpg'),
                     title: 'Learning to Write as a Professional Author',
                     price: '$40.00',
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ...",
                     link: '#',
+                    lessons: 20,
+                    students: 50,
                 },
                 {
                     media: require('../../assets/images/stock-full-hd-03-443x600.jpg'),
                     title: 'Cuastomer-centric Info-Tech Strategies',
                     price: 'Free',
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ...",
                     link: '#',
+                    lessons: 15,
+                    students: 70,
                 },
                 {
                     media: require('../../assets/images/stock-full-hd-04-443x600.jpg'),
                     title: 'Open Programming Courses for Everyone: Python',
                     price: '$19.00',
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ...",
                     link: '#',
+                    lessons: 30,
+                    students: 80,
                 },
                 {
                     media: require('../../assets/images/stock-full-hd-06-443x600.jpg'),
                     title: 'Academic Listening and Note-taking',
                     price: '$26.00',
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ...",
                     link: '#',
+                    lessons: 20,
+                    students: 30,
                 },
             ]
         }
